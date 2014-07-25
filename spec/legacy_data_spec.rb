@@ -11,7 +11,7 @@ describe('legacy_data') do
     expect(legacy_data({1 => ["A", "E"], 2 => ["D", "G"]})).to(eq({"A" => 1, "E" => 1, "D" => 2, "G" => 2}))
   end
 
-  it ('will sort the new has alphabetically') do
+  it ('will sort the new hash alphabetically') do
     expect(legacy_data({1 => ["A", "E"], 2 => ["D", "G"]})).to(eq({"A" => 1, "D" => 2, "E" => 1, "G" => 2}))
   end
 end
